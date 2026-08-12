@@ -5,7 +5,7 @@
 int main() {
   int radius;
   float area, circumference;
-  float pi = 3.14;
+  float pi = 3.14f;
 
   scanf("%d", &radius);
 
