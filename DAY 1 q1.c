@@ -3,9 +3,14 @@
 #include <stdio.h>
 
 int main() {
-  int a,b,sum;
-  scanf("%d %d",&a,&b);
-  sum= a + b;
-  printf("sum = %d\n",sum);
+  float a,b,sum;                     //The entered numbers can be either integer values or decimal
+  printf("Enter the first number:");
+  scanf("%f",&a);
+
+  printf("Enter the second number:");
+  scanf("%f",&b);
+  
+  sum= a + b;                //The sum will be either a decimal value or n integer value depending upon the numbers entered
+  printf("sum = %.2f\n",sum);
   return 0;
 }
