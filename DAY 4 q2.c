@@ -4,13 +4,13 @@
 
 int main() {
   int n;      //'n' tells us how till how many natural numbers dowe need the sum
-  int sum-0;
+  int sum=0;
 
   printf("Enter a positive integer n:");
   scanf("%d",&n);
 
   if (n<1) {                   //Ensuring whether the number is positive or not
-     printf("Number should be greater han 1!\n);
+     printf("Number should be greater han 1!\n");
      return 1;
        }
 
