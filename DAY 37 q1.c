@@ -5,10 +5,10 @@ int main() {
   int r,c;
 
   printf("Enter the no of rows : ");
-  scanf("%d",&r);                 //No of rows will be the outer index for array 1
+  scanf("%d",&r);                 //Rows will be the outer index for array 1
 
   printf("Enter the no of columns : ");
-  scanf("%d",&c);                 //No of columns will be the inner index for array 1
+  scanf("%d",&c);                 //Columns will be the inner index for array 1
 
   int arr1[r][c];                //Declaring the first array based on the no of rows and columns entered
 
