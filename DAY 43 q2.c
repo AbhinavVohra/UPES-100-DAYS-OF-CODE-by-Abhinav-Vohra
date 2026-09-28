@@ -1,27 +1,36 @@
-//Write to program to find whether a string is Palindorme or not
+//Write a program to check if a string is palindrome
 
-#include <stdio.h>                      //TO BE CORRECTED LATER
+#include <stdio.h>
+#include <string.h>
 int main() {
   char str[100];
-  int n,middle,end;
+  char duplicate[100];
+  int n;
+  int start,end,middle;
   int temp;
-  char z[100];
 
   printf("Enter the string : ");
-  scanf("%s",&str);
+  scanf("%s",str);
   n = sizeof(str);
-  middle = n / 2;
+
+  for (int i = 0 ; i < n ; i = i + 1) {
+       duplicate[i] = str[i];
+  }
+
+  start = 0;
   end = n - 1;
-  
-  for (int y = 0 ; y < n ; y = y + 1) {
-       z[y] = str[y];
+  middle = (start + end)/2;
+  for (int j = 0 ; j < middle ; j = j + 1) {
+       temp = str[start];
+       str[start] = str[end];
+       str[end] = temp;
+       start = start + 1;
+       end = end - 1;
   }
-  for (int i = 0 ; i < middle ; i = i + 1) {
-       str[i] = temp;
-       str[i] = str[end-i];
-       str[end-i] = temp;
-  }
-  if (str == z) {
+  int check;
+  check = strcmp(str,duplicate);
+
+  if (check == 0) {
        printf("String is Palindrome");
   }
   else {
@@ -29,3 +38,6 @@ int main() {
   }
   return 0;
 }
+  
+     
+ 
