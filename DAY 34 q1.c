@@ -27,7 +27,7 @@ int main() {
       printf("\nEnter the element which has to be inserted :");        //Asking from the user the value of the element which has to be inserted
       scanf("%d",&element);
 
-      for (int j = n; j > pos; j--) {     //This loop will iterate backwards in the array and will create a space for the new element to be inserted 
+      for (int j = n - 1 ; j > pos ; j--) {     //This loop will iterate backwards in the array and will create a space for the new element to be inserted 
       arr[j] = arr[j - 1];
       }
       arr[pos] = element;             //Inserting the element
