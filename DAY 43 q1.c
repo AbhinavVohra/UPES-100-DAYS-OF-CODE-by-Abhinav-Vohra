@@ -1,7 +1,5 @@
 //Write a program to reverse a string
 
-//Write a program to reverse a string
-
 #include <stdio.h>
 int main() {
   char str[100];
