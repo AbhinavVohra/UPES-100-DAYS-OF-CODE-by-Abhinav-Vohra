@@ -8,6 +8,7 @@ int main() {
 
   str2[100];
   int c;
+  c = 0;
 
   for (int i = 0 ; str1[i] != '\0' ; i = i + 1) {
        if (str1[i] != 'A' || str1[i] != 'E' || str1[i] != 'I' || str1[i] != 'U' || str1[i] != 'O' 
