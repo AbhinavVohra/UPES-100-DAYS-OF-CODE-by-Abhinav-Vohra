@@ -10,3 +10,34 @@ N.B:
 - Do not use Stack, use brute force approach (nested loop) to solve.
 */
 
+#include <stdio.h>
+
+int main() {
+    int n, i, j, found;
+    printf("Enter the size of the array: ");
+    scanf("%d", &n);
+    int arr[n];
+    printf("Enter the elements of the array: ");
+    for (i = 0; i < n; i= i + 1) {
+        scanf("%d", &arr[i]);
+    }
+
+    for (i = 0 ; i < n ; i = i + 1) {
+        found = 0;
+        for (j = i + 1; j < n; j++) {
+            if (arr[j] > arr[i]) {
+                printf("%d", arr[j]);
+                found = 1;
+                break;
+            }
+        }
+        if (found == 0) {
+            printf("-1");
+        }
+        if (i < n - 1) {
+            printf(",");
+        }
+    }
+    return 0;
+}
+
